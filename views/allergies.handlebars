@@ -1,0 +1,23 @@
+<div id="container">
+	<div class="table-responsive">
+		<table class="table" allergysearcht>
+			<thead>
+				<th data-field="name">Name</th>
+				<th data-field="surname">Surname</th>
+				<th data-field="allergies">Allergy</th>  
+			</thead>
+		    <tbody>
+				{{#children}}
+					<tr>
+					    <td><h2>{{name}}</h2></td>
+					    <td><h2>{{surname}}</h2></td>
+					    <td><h2>{{allergies}}</h2></td> 
+					</tr>
+				{{/children}}
+			</tbody>
+		</table>
+	</div>
+</div>
+{{#empty}}
+	<p>The list is empty</p>
+{{/empty}}

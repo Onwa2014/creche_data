@@ -1,0 +1,18 @@
+<div id="container" >
+	<table class="table" id="childsearchtab">
+		<thead>
+			<th data-field="name">Name</th>
+			<th data-field="surname">Surname</th>
+			<th data-field="birth_date">Date of Birth</th>  
+		</thead>
+		<tbody>
+			{{#children}}
+				<tr>
+					<td><h2>{{name}}</h2></td>
+					<td><h2>{{surname}}</h2></td>
+					<td><h2>{{birth_date}}</h2></td> 
+				</tr>
+			{{/children}}
+		</tbody>
+	</table>
+</div>

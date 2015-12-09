@@ -1,0 +1,32 @@
+<div id="container">
+	<form>
+        <input type="numbers" id="medsearch" placeholder="Search here">
+    </form> <br />
+	<a href="/add_meds" class="btn btn-warning btn-lg" role="button">Add new</a>
+	<div class="table-responsive">
+		<table class="table" id="medsearchtab">
+			<thead>
+				<th data-field="date">Time</th>
+				<th data-field="name">Name</th>
+				<th data-field="surname">Surname</th>
+				<th data-field="medication">Medication</th>  
+			</thead>
+		    <tbody>
+				{{#medication}}
+					<tr>
+					    <td><h2>{{time}}</h2></td>
+					    <td><h2>{{name}}</h2></td>
+					    <td><h2>{{child_lastname}}</h2></td>
+					    <td><h2>{{medication}}</h2></td> 
+						<td><a href="/meds/edit/{{id}}">Edit</a></td>
+						<td><a href="/meds/delete/{{id}}">Delete</a></td>
+					</tr>
+				{{/medication}}
+			</tbody>
+		</table>
+	</div>
+</div>
+{{#empty}}
+	<p>The list is empty</p>
+{{/empty}}
+<script src = "ajax.js"></script>

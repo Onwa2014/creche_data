@@ -1,0 +1,20 @@
+<div id="container">
+    <h1>Add</h1>
+	<form action="/new_child/add" method="POST">
+	        Name:<br />
+	        <input type="text" value="{{name}}" name="name"><br />
+	        Surname:<br />
+	        <input type="text" value="{{surname}}" name="surname"><br />
+	        D.O.B:
+	        <br /><input value="{{birth_date}}" name="birth_date" type="date"><br />
+	        Address:
+	        <br /><input value="{{address}}" name="address"><br />
+	  		Parent contact number:
+	        <br /><input value="{{contact_number}}" name="contact_number"><br />
+	        Allergies:
+	        <br /><input type="text" value="{{allergies}}" name="allergies"><br />
+	        Folder number:
+	       	<br /><input value="{{folder_number}}" name="folder_number"><br />
+	        <br /><br /><input type="submit">
+	</form>
+</div>

@@ -1,0 +1,14 @@
+<div id="container"><h1>Edit</h1>
+
+        
+
+        <form method="POST" action="/meds/update/{{id}}">
+            {{#data}}
+                Medication: <br /><input type="text" name="medication" value="{{data.medication}}" required><br />
+                Time:<br /> <input type="text" name="time" value="{{data.time}}" required><br />
+                <input type="submit">
+            {{/data}}
+
+        </form>
+    
+</div>

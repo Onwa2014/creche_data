@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<title>Creche Data</title>
+    	<link href="/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/style.css" rel="stylesheet">
+                <!-- Custom CSS -->
+        <script src="/js/jquery.js"></script>
+        <
+        <style>
+            body {
+            	background-image: url("/creche.jpg");
+            	background-size: cover;
+            }
+            img {
+            	margin-left: 20%;
+                position: center;
+
+            }
+            #container{
+                    background-color:#000000;
+                    color:#990099;
+                    font-size: 25px;
+                    height:auto;
+                    width: auto;
+                    opacity: 0.70;
+            }
+        </style>
+    </head>
+    <body>
+    
+ 		<img src="/logo.png" width="700px">
+ 		
+            
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="btn-group-vertical">
+
+                        <a href="/children" class ="btn btn-lg btn-success" >Children list</a><br />
+                        <a href="/meds" class ="btn btn-lg btn-warning">Medication schedule</a><br />
+                        <a href="/allergies" class ="btn btn-lg btn-danger">Allergies</a><br />
+                        <a href="#" class ="btn btn-lg btn-success">Users</a><br />
+                        <a href="#" class ="btn btn-lg btn-warning">Logout</a>
+                    </div>
+                </div>
+                
+     		    <div class="col-md-9"> 
+        		    <div container="class theme-showcase" role="main">
+                        <strong>{{{body}}}</strong>
+                    </div>
+                </div>
+            
+        </div>
+    </body>
+</html>
